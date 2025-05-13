@@ -1,0 +1,206 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    text-align: center;
+    background-color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.box{
+    width: 50%;
+    height: fit-content;
+    margin: 0 auto;
+   
+    background-color: rgba(0, 0, 255, 0.518);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    text-align: center;
+
+}
+.s{
+    width: 50%;
+    height: fit-content;
+    margin: 0 auto;
+   
+    background-color: rgba;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    text-align: center;
+    
+}
+input,button{
+    display: inline-block;
+    
+    padding: 5px;
+}
+.weather-container {
+    display: flex;
+    background-color: rgba;
+    justify-content: center; 
+    align-items: center;
+}
+
+.weather-info {
+    display: flex; 
+    align-items: center;
+    gap: 10px; 
+}
+
+.humidity, .wind {
+    display: inline-block; 
+    align-items: center;
+    padding: 5px;
+    
+    border-radius: 5px;
+} */
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body */
+body {
+    background: linear-gradient(to right, #87CEEB, #4682B4); /* Light blue gradient */
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; /* Keep elements in a vertical stack */
+    align-items: center;
+    padding-top: 20px; /* Push content down */
+}
+
+/* Header */
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Main Container */
+.box {
+    width: 90%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-top: 30px; /* Ensures the box is below the header */
+}
+
+/* Search Bar */
+.s {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Input Box */
+.input {
+    width: 70%;
+    height: 40px; /* Increased height */
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid white;
+    border-radius: 10px;
+    outline: none;
+}
+
+/* Search Button */
+.button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px; /* Same as input */
+    width: 40px;
+    border-radius: 50%;
+}
+
+/* Search Button Image */
+.button img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Weather Section */
+.weather {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.icon {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.temp {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.city {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+/* Weather Info */
+.weather-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.weather-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.humidity, .wind {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    border-radius: 10px;
+    width: 80px;
+}
+
+img {
+    width: 50px;
+    height: auto;
+}
+.weather{
+    display:none;
+}
+.weather-container{
+    display:none;
+}
+.error{
+    align-items: center;
+    font-size: 18px;
+    display:none;
+}
+
